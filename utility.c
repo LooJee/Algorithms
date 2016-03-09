@@ -1,32 +1,12 @@
 /*************************************************************************
-	> File Name: insertion_sort.c
+	> File Name: utility.c
 	> Author: Jerry Lu
 	> Mail: mynameislujie1992@gmail.com
-	> Created Time: 五  3/ 4 09:26:47 2016
+	> Created Time: 三  3/ 9 09:30:36 2016
  ************************************************************************/
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-int *CreateNewArray(int n);
-int Input(int **a);
-void Display(int *a, int n);
-void InsertionSort(int *a, int n);
-
-int main(int argc, char **argv)
-{
-    int *array = NULL;
-    int n = 0;
-
-    n = Input(&array);
-    Display(array, n);
-    InsertionSort(array, n);
-    Display(array, n);
-    free(array);
-
-    return 0;
-}
+#include "utility.h"
 
 void InsertionSort(int *a, int n)
 {
