@@ -10,6 +10,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 int *CreateNewArray(int n);
 int Input(int **a);
