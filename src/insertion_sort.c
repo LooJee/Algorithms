@@ -5,7 +5,7 @@
 	> Created Time: 五  3/ 4 09:26:47 2016
  ************************************************************************/
 
-#include <stdio.h>
+#include "insertion_sort.h"
 
 void InsertionSort(int *a, int n)
 {

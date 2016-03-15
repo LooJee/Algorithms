@@ -5,8 +5,8 @@
 	> Created Time: 16/3/15
  ************************************************************************/
 
-#include "insertion_sort.h"
-#include "utility.h"
+#include "../src/insertion_sort.h"
+#include "../src/utility.h"
 
 int main(int argc, char **argv)
 {
