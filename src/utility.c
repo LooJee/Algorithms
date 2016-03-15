@@ -8,22 +8,6 @@
 #include <stdio.h>
 #include "utility.h"
 
-void InsertionSort(int *a, int n)
-{
-    for (int i = 1; i < n; ++i)
-    {
-        int key = a[i];
-        for (int j = i - 1; j >= 0; --j)
-        {
-            if (a[j] > key)
-            {
-                a[j + 1] = a[j];
-                a[j] = key;
-            }
-        }
-    }
-}
-
 int Input(int **a)
 {
     int n = 0;

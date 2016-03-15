@@ -8,19 +8,20 @@
 #include <stdio.h>
 #include "utility.h"
 
-void InsertionSort(int *a, int n);
-
-int main(int argc, char **argv)
+void InsertionSort(int *a, int n)
 {
-    int *array = NULL;
-    int n = 0;
-
-    n = Input(&array);
-    Display(array, n);
-    InsertionSort(array, n);
-    Display(array, n);
-    free(array);
-
-    return 0;
+    for (int i = 1; i < n; ++i)
+    {
+        int key = a[i];
+        for (int j = i - 1; j >= 0; --j)
+        {
+            if (a[j] > key)
+            {
+                a[j + 1] = a[j];
+                a[j] = key;
+            }
+        }
+    }
 }
+
 
